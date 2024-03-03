@@ -1,0 +1,817 @@
+{
+  "nodes": [
+    {
+      "id": "866a182b-b466-4758-8328-704769426ab2",
+      "type": "dc_power_supply_real",
+      "x": 720,
+      "y": 220,
+      "properties": {
+        "CH1_stat": false,
+        "CH2_stat": true,
+        "CH3_stat": false,
+        "voltage1": 0,
+        "voltage2": 3,
+        "voltage3": 0,
+        "current1": 0,
+        "current2": 1,
+        "current3": 0,
+        "powerSupplyData": [
+          {
+            "voltage": 0,
+            "current": 0,
+            "power": 0,
+            "channel": 1
+          },
+          {
+            "voltage": 3,
+            "current": 0,
+            "power": 0,
+            "channel": 2
+          },
+          {
+            "voltage": 0,
+            "current": 0,
+            "power": 0,
+            "channel": 3
+          }
+        ]
+      },
+      "zIndex": 0,
+      "Anchors": [
+        {
+          "x": 671.2488,
+          "y": 275.8,
+          "type": "HI1",
+          "edgeAddable": true,
+          "id": "866a182b-b466-4758-8328-704769426ab2_HI1"
+        },
+        {
+          "x": 691.7616,
+          "y": 275.8,
+          "type": "LO1",
+          "id": "866a182b-b466-4758-8328-704769426ab2_LO1"
+        },
+        {
+          "x": 730.656,
+          "y": 275.8,
+          "type": "HI2",
+          "edgeAddable": true,
+          "id": "866a182b-b466-4758-8328-704769426ab2_HI2"
+        },
+        {
+          "x": 750.636,
+          "y": 275.8,
+          "type": "LO2",
+          "id": "866a182b-b466-4758-8328-704769426ab2_LO2"
+        },
+        {
+          "x": 771.948,
+          "y": 275.8,
+          "type": "HI3",
+          "edgeAddable": true,
+          "id": "866a182b-b466-4758-8328-704769426ab2_HI3"
+        },
+        {
+          "x": 791.6616,
+          "y": 275.8,
+          "type": "LO3",
+          "id": "866a182b-b466-4758-8328-704769426ab2_LO3"
+        }
+      ]
+    },
+    {
+      "id": "8445cdfd-94d3-42d7-9013-5c0b3f333280",
+      "type": "multimeter_real",
+      "x": 110,
+      "y": 220,
+      "properties": {
+        "mode1_options": [
+          {
+            "label": "voltage",
+            "value": "voltage"
+          },
+          {
+            "label": "current",
+            "value": "current"
+          }
+        ],
+        "mode1_value": "voltage",
+        "mode2_options": [
+          {
+            "label": "dc",
+            "value": "dc"
+          },
+          {
+            "label": "ac",
+            "value": "ac"
+          }
+        ],
+        "mode2_value": "dc",
+        "multimeterData": [
+          {
+            "time": "2022-10-09 21:45:47",
+            "mode1": "voltage",
+            "mode2": "dc",
+            "value": 0.00000771956607,
+            "unit": "V"
+          }
+        ]
+      },
+      "zIndex": 0,
+      "Anchors": [
+        {
+          "x": 253.30331753554503,
+          "y": 193.68421052631578,
+          "type": "HI1",
+          "edgeAddable": true,
+          "id": "8445cdfd-94d3-42d7-9013-5c0b3f333280_HI1"
+        },
+        {
+          "x": 253.30331753554503,
+          "y": 212.5,
+          "type": "LO",
+          "id": "8445cdfd-94d3-42d7-9013-5c0b3f333280_LO"
+        },
+        {
+          "x": 253.30331753554503,
+          "y": 232.5,
+          "type": "HI2",
+          "edgeAddable": true,
+          "id": "8445cdfd-94d3-42d7-9013-5c0b3f333280_HI2"
+        }
+      ]
+    },
+    {
+      "id": "22a87d55-77f2-448b-9e57-da7ad33eb5da",
+      "type": "oscilloscope_real",
+      "x": 610,
+      "y": 460,
+      "properties": {
+      },
+      "zIndex": 0,
+      "Anchors": [
+        {
+          "x": 648.2239,
+          "y": 526.3,
+          "type": "CH1",
+          "edgeAddable": true,
+          "id": "22a87d55-77f2-448b-9e57-da7ad33eb5da_CH1"
+        },
+        {
+          "x": 672.0136,
+          "y": 525.7,
+          "type": "CH2",
+          "edgeAddable": true,
+          "id": "22a87d55-77f2-448b-9e57-da7ad33eb5da_CH2"
+        },
+        {
+          "x": 703.8223,
+          "y": 503.2,
+          "type": "GND",
+          "edgeAddable": true,
+          "id": "22a87d55-77f2-448b-9e57-da7ad33eb5da_GND"
+        }
+      ]
+    },
+    {
+      "id": "6085d87f-75ab-4fc6-94f2-d8164939b53d",
+      "type": "signal_generator",
+      "x": 250,
+      "y": 460,
+      "properties": {
+        "ch1": {
+          "function_type": "sinusoid",
+          "function_type_options": [
+            {
+              "label": "sinusoid",
+              "value": "sinusoid"
+            },
+            {
+              "label": "square",
+              "value": "square"
+            },
+            {
+              "label": "ramp",
+              "value": "ramp"
+            },
+            {
+              "label": "pulse",
+              "value": "pulse"
+            }
+          ],
+          "voltage": "1",
+          "voltage_unit": "Vpp",
+          "voltage_unit_options": [
+            {
+              "label": "Vrms",
+              "value": "Vrms"
+            },
+            {
+              "label": "mVrms",
+              "value": "mVrms"
+            },
+            {
+              "label": "Vpp",
+              "value": "Vpp"
+            },
+            {
+              "label": "mVpp",
+              "value": "mVpp"
+            }
+          ],
+          "frequency_or_period": true,
+          "frequency": 1,
+          "frequency_unit": "kHz",
+          "frequency_unit_options": [
+            {
+              "label": "MAHz",
+              "value": "MAHz"
+            },
+            {
+              "label": "kHz",
+              "value": "kHz"
+            },
+            {
+              "label": "Hz",
+              "value": "Hz"
+            },
+            {
+              "label": "mHz",
+              "value": "mHz"
+            },
+            {
+              "label": "uHz",
+              "value": "uHz"
+            }
+          ],
+          "period": 1,
+          "period_unit": "ms",
+          "period_unit_options": [
+            {
+              "label": "ks",
+              "value": "ks"
+            },
+            {
+              "label": "s",
+              "value": "s"
+            },
+            {
+              "label": "ms",
+              "value": "ms"
+            },
+            {
+              "label": "us",
+              "value": "us"
+            },
+            {
+              "label": "ns",
+              "value": "ns"
+            }
+          ],
+          "offset": 0,
+          "offset_unit": "mV",
+          "offset_unit_options": [
+            {
+              "label": "V",
+              "value": "V"
+            },
+            {
+              "label": "mV",
+              "value": "mV"
+            }
+          ],
+          "phase": 0,
+          "dcycle": 50,
+          "output": true
+        },
+        "ch2": {
+          "function_type": "",
+          "function_options": [
+          ],
+          "voltage": "",
+          "voltage_unit": "",
+          "voltage_unit_options": [
+          ],
+          "frequency": "",
+          "frequency_unit": "",
+          "frequency_unit_options": [
+          ],
+          "period": "",
+          "period_unit": "",
+          "period_unit_options": [
+          ],
+          "offset": "",
+          "phase": ""
+        }
+      },
+      "zIndex": 0,
+      "Anchors": [
+        {
+          "x": 237.28672,
+          "y": 538.71,
+          "type": "CH1",
+          "edgeAddable": true,
+          "id": "6085d87f-75ab-4fc6-94f2-d8164939b53d_CH1"
+        },
+        {
+          "x": 277.9072,
+          "y": 538.2,
+          "type": "CH2",
+          "id": "6085d87f-75ab-4fc6-94f2-d8164939b53d_CH2"
+        },
+        {
+          "x": 363.79936,
+          "y": 477.51,
+          "type": "GND",
+          "edgeAddable": true,
+          "id": "6085d87f-75ab-4fc6-94f2-d8164939b53d_GND"
+        }
+      ]
+    },
+    {
+      "id": "0b663ada-4a14-408f-af73-e469f1ec2e98",
+      "type": "resistance_real",
+      "x": 890,
+      "y": 620,
+      "properties": {
+      },
+      "zIndex": 0,
+      "Anchors": [
+        {
+          "x": 844.3042016806722,
+          "y": 621.5,
+          "type": "P",
+          "edgeAddable": true,
+          "id": "0b663ada-4a14-408f-af73-e469f1ec2e98_P"
+        },
+        {
+          "x": 928.7025210084033,
+          "y": 663.7,
+          "type": "N",
+          "edgeAddable": true,
+          "id": "0b663ada-4a14-408f-af73-e469f1ec2e98_N"
+        }
+      ]
+    },
+    {
+      "id": "161a2db6-a8e0-4bfc-a5a1-2debc66900de",
+      "type": "capacitance_real",
+      "x": 850,
+      "y": 700,
+      "properties": {
+      },
+      "zIndex": 0,
+      "Anchors": [
+        {
+          "x": 844.5706806282723,
+          "y": 734.9,
+          "type": "P",
+          "edgeAddable": true,
+          "id": "161a2db6-a8e0-4bfc-a5a1-2debc66900de_P"
+        },
+        {
+          "x": 861.9712041884817,
+          "y": 745.2,
+          "type": "P",
+          "edgeAddable": true,
+          "id": "161a2db6-a8e0-4bfc-a5a1-2debc66900de_N"
+        }
+      ]
+    },
+    {
+      "id": "a53d10e6-6802-4616-a23c-1b9280967b13",
+      "type": "inductance_real",
+      "x": 690,
+      "y": 760,
+      "properties": {
+      },
+      "zIndex": 0,
+      "Anchors": [
+        {
+          "x": 662.0555984555984,
+          "y": 782.2,
+          "type": "P",
+          "edgeAddable": true,
+          "id": "a53d10e6-6802-4616-a23c-1b9280967b13_P"
+        },
+        {
+          "x": 704.8138996138996,
+          "y": 805.3,
+          "type": "N",
+          "edgeAddable": true,
+          "id": "a53d10e6-6802-4616-a23c-1b9280967b13_N"
+        }
+      ]
+    },
+    {
+      "id": "3b182fbe-adf3-4096-8c16-512ce451763d",
+      "type": "MOSFET_real",
+      "x": 410,
+      "y": 750,
+      "properties": {
+      },
+      "zIndex": 0,
+      "Anchors": [
+        {
+          "x": 362.95223097112864,
+          "y": 817.04,
+          "type": "G",
+          "edgeAddable": true,
+          "id": "3b182fbe-adf3-4096-8c16-512ce451763d_G"
+        },
+        {
+          "x": 374.1977952755906,
+          "y": 820.56,
+          "type": "D",
+          "edgeAddable": true,
+          "id": "3b182fbe-adf3-4096-8c16-512ce451763d_D"
+        },
+        {
+          "x": 384.6401049868766,
+          "y": 824.56,
+          "type": "S",
+          "edgeAddable": true,
+          "id": "3b182fbe-adf3-4096-8c16-512ce451763d_S"
+        }
+      ]
+    },
+    {
+      "id": "d4304f66-8b6c-463d-8ac5-2dd9026e14d4",
+      "type": "diode_real",
+      "x": 550,
+      "y": 800,
+      "properties": {
+      },
+      "zIndex": 0,
+      "Anchors": [
+        {
+          "x": 507.88416988416986,
+          "y": 792.2,
+          "type": "P",
+          "edgeAddable": true,
+          "id": "d4304f66-8b6c-463d-8ac5-2dd9026e14d4_P"
+        },
+        {
+          "x": 596.911196911197,
+          "y": 843.1,
+          "type": "N",
+          "edgeAddable": true,
+          "id": "d4304f66-8b6c-463d-8ac5-2dd9026e14d4_N"
+        }
+      ]
+    },
+    {
+      "id": "219bfc0b-9525-47d3-9a78-83c445868bc3",
+      "type": "GND",
+      "x": 700,
+      "y": 960,
+      "properties": {
+      },
+      "zIndex": 0,
+      "Anchors": [
+        {
+          "x": 681.1912089552238,
+          "y": 931.09,
+          "type": "GND",
+          "edgeAddable": true,
+          "id": "219bfc0b-9525-47d3-9a78-83c445868bc3_GND"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "30bb2416-89a0-4eeb-9fab-37d6f7df2a28",
+      "type": "bezier",
+      "sourceNodeId": "8445cdfd-94d3-42d7-9013-5c0b3f333280",
+      "targetNodeId": "6085d87f-75ab-4fc6-94f2-d8164939b53d",
+      "startPoint": {
+        "x": 253.30331753554503,
+        "y": 212.5
+      },
+      "endPoint": {
+        "x": 363.79936,
+        "y": 477.51
+      },
+      "properties": {
+      },
+      "zIndex": 1,
+      "pointsList": [
+        {
+          "x": 253.30331753554503,
+          "y": 212.5
+        },
+        {
+          "x": 361.185,
+          "y": 212.5
+        },
+        {
+          "x": 428.924342105263,
+          "y": 352.6853019312809
+        },
+        {
+          "x": 363.79936,
+          "y": 477.51
+        }
+      ],
+      "sourceAnchorId": "8445cdfd-94d3-42d7-9013-5c0b3f333280_LO",
+      "targetAnchorId": "6085d87f-75ab-4fc6-94f2-d8164939b53d_GND"
+    },
+    {
+      "id": "9da1e988-daf5-4590-bb9c-52750477b066",
+      "type": "bezier",
+      "sourceNodeId": "6085d87f-75ab-4fc6-94f2-d8164939b53d",
+      "targetNodeId": "22a87d55-77f2-448b-9e57-da7ad33eb5da",
+      "startPoint": {
+        "x": 363.79936,
+        "y": 477.51
+      },
+      "endPoint": {
+        "x": 703.8223,
+        "y": 503.2
+      },
+      "properties": {
+      },
+      "zIndex": 1,
+      "pointsList": [
+        {
+          "x": 363.79936,
+          "y": 477.51
+        },
+        {
+          "x": 558,
+          "y": 216.3333282470703
+        },
+        {
+          "x": 843.65,
+          "y": 503.2
+        },
+        {
+          "x": 703.8223,
+          "y": 503.2
+        }
+      ],
+      "sourceAnchorId": "6085d87f-75ab-4fc6-94f2-d8164939b53d_GND",
+      "targetAnchorId": "22a87d55-77f2-448b-9e57-da7ad33eb5da_GND"
+    },
+    {
+      "id": "95328e4f-ed72-44dc-b04f-cfd364a6b4fd",
+      "type": "bezier",
+      "sourceNodeId": "866a182b-b466-4758-8328-704769426ab2",
+      "targetNodeId": "22a87d55-77f2-448b-9e57-da7ad33eb5da",
+      "startPoint": {
+        "x": 691.7616,
+        "y": 275.8
+      },
+      "endPoint": {
+        "x": 703.8223,
+        "y": 503.2
+      },
+      "properties": {
+      },
+      "zIndex": 1,
+      "pointsList": [
+        {
+          "x": 691.7616,
+          "y": 275.8
+        },
+        {
+          "x": 691.7616,
+          "y": 410
+        },
+        {
+          "x": 843.65,
+          "y": 503.2
+        },
+        {
+          "x": 703.8223,
+          "y": 503.2
+        }
+      ],
+      "sourceAnchorId": "866a182b-b466-4758-8328-704769426ab2_LO1",
+      "targetAnchorId": "22a87d55-77f2-448b-9e57-da7ad33eb5da_GND"
+    },
+    {
+      "id": "29d729bc-28ec-4f8a-bf36-15e8f3738de6",
+      "type": "bezier",
+      "sourceNodeId": "22a87d55-77f2-448b-9e57-da7ad33eb5da",
+      "targetNodeId": "6085d87f-75ab-4fc6-94f2-d8164939b53d",
+      "startPoint": {
+        "x": 648.2239,
+        "y": 526.3
+      },
+      "endPoint": {
+        "x": 237.28672,
+        "y": 538.71
+      },
+      "properties": {
+      },
+      "zIndex": 1,
+      "pointsList": [
+        {
+          "x": 648.2239,
+          "y": 526.3
+        },
+        {
+          "x": 648.2239,
+          "y": 635
+        },
+        {
+          "x": 237.28672,
+          "y": 645
+        },
+        {
+          "x": 237.28672,
+          "y": 538.71
+        }
+      ],
+      "sourceAnchorId": "22a87d55-77f2-448b-9e57-da7ad33eb5da_CH1",
+      "targetAnchorId": "6085d87f-75ab-4fc6-94f2-d8164939b53d_CH1"
+    },
+    {
+      "id": "27e8a7fd-2178-4337-8c7f-cb7abaa26469",
+      "type": "bezier",
+      "sourceNodeId": "3b182fbe-adf3-4096-8c16-512ce451763d",
+      "targetNodeId": "6085d87f-75ab-4fc6-94f2-d8164939b53d",
+      "startPoint": {
+        "x": 362.95223097112864,
+        "y": 817.04
+      },
+      "endPoint": {
+        "x": 237.28672,
+        "y": 538.71
+      },
+      "properties": {
+      },
+      "zIndex": 1,
+      "pointsList": [
+        {
+          "x": 362.95223097112864,
+          "y": 817.04
+        },
+        {
+          "x": 362.95223097112864,
+          "y": 930
+        },
+        {
+          "x": 237.28672,
+          "y": 645
+        },
+        {
+          "x": 237.28672,
+          "y": 538.71
+        }
+      ],
+      "sourceAnchorId": "3b182fbe-adf3-4096-8c16-512ce451763d_G",
+      "targetAnchorId": "6085d87f-75ab-4fc6-94f2-d8164939b53d_CH1"
+    },
+    {
+      "id": "ece21fad-da0b-43df-b2f4-a15c605c0636",
+      "type": "bezier",
+      "sourceNodeId": "0b663ada-4a14-408f-af73-e469f1ec2e98",
+      "targetNodeId": "161a2db6-a8e0-4bfc-a5a1-2debc66900de",
+      "startPoint": {
+        "x": 844.3042016806722,
+        "y": 621.5
+      },
+      "endPoint": {
+        "x": 844.5706806282723,
+        "y": 734.9
+      },
+      "properties": {
+      },
+      "zIndex": 1,
+      "pointsList": [
+        {
+          "x": 844.3042016806722,
+          "y": 621.5
+        },
+        {
+          "x": 742.1008403361344,
+          "y": 621.5
+        },
+        {
+          "x": 844.5706806282723,
+          "y": 850
+        },
+        {
+          "x": 844.5706806282723,
+          "y": 734.9
+        }
+      ],
+      "sourceAnchorId": "0b663ada-4a14-408f-af73-e469f1ec2e98_P",
+      "targetAnchorId": "161a2db6-a8e0-4bfc-a5a1-2debc66900de_P"
+    },
+    {
+      "id": "46bd8257-fb9d-4efe-949a-cb61a7db3332",
+      "type": "bezier",
+      "sourceNodeId": "161a2db6-a8e0-4bfc-a5a1-2debc66900de",
+      "targetNodeId": "0b663ada-4a14-408f-af73-e469f1ec2e98",
+      "startPoint": {
+        "x": 861.9712041884817,
+        "y": 745.2
+      },
+      "endPoint": {
+        "x": 928.7025210084033,
+        "y": 663.7
+      },
+      "properties": {
+      },
+      "zIndex": 1,
+      "pointsList": [
+        {
+          "x": 861.9712041884817,
+          "y": 745.2
+        },
+        {
+          "x": 861.9712041884817,
+          "y": 850
+        },
+        {
+          "x": 928.7025210084033,
+          "y": 770
+        },
+        {
+          "x": 928.7025210084033,
+          "y": 663.7
+        }
+      ],
+      "sourceAnchorId": "161a2db6-a8e0-4bfc-a5a1-2debc66900de_N",
+      "targetAnchorId": "0b663ada-4a14-408f-af73-e469f1ec2e98_N"
+    },
+    {
+      "id": "ee8888d2-4f3e-4b06-aca2-d9a24265ef40",
+      "type": "bezier",
+      "sourceNodeId": "219bfc0b-9525-47d3-9a78-83c445868bc3",
+      "targetNodeId": "0b663ada-4a14-408f-af73-e469f1ec2e98",
+      "startPoint": {
+        "x": 681.1912089552238,
+        "y": 931.09
+      },
+      "endPoint": {
+        "x": 928.7025210084033,
+        "y": 663.7
+      },
+      "properties": {
+      },
+      "zIndex": 1,
+      "pointsList": [
+        {
+          "x": 681.1912089552238,
+          "y": 931.09
+        },
+        {
+          "x": 681.1912089552238,
+          "y": 825
+        },
+        {
+          "x": 1028,
+          "y": 956.3333282470703
+        },
+        {
+          "x": 928.7025210084033,
+          "y": 663.7
+        }
+      ],
+      "sourceAnchorId": "219bfc0b-9525-47d3-9a78-83c445868bc3_GND",
+      "targetAnchorId": "0b663ada-4a14-408f-af73-e469f1ec2e98_N"
+    },
+    {
+      "id": "1faae6f9-e221-4aaf-b891-0e7a8562a1e0",
+      "type": "bezier",
+      "sourceNodeId": "8445cdfd-94d3-42d7-9013-5c0b3f333280",
+      "targetNodeId": "0b663ada-4a14-408f-af73-e469f1ec2e98",
+      "startPoint": {
+        "x": 253.30331753554503,
+        "y": 193.68421052631578
+      },
+      "endPoint": {
+        "x": 844.3042016806722,
+        "y": 621.5
+      },
+      "properties": {
+      },
+      "zIndex": 1,
+      "pointsList": [
+        {
+          "x": 253.30331753554503,
+          "y": 193.68421052631578
+        },
+        {
+          "x": 1232.7781312247341,
+          "y": -243.35875025229274
+        },
+        {
+          "x": 742.1008403361344,
+          "y": 621.5
+        },
+        {
+          "x": 844.3042016806722,
+          "y": 621.5
+        }
+      ],
+      "sourceAnchorId": "8445cdfd-94d3-42d7-9013-5c0b3f333280_HI1",
+      "targetAnchorId": "0b663ada-4a14-408f-af73-e469f1ec2e98_P"
+    }
+  ]
+}
