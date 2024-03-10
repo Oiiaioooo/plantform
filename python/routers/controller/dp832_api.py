@@ -15,7 +15,7 @@ class dp832_config(BaseModel):
     output_states: List[bool] = Field(default=[0, 0, 0], title="通道的输出状态", description="例如[True,False,False]")
 
 
-dp832_addr = "USB0::0x1AB1::0x0E11::DP8C175105663::INSTR"
+dp832_addr = "USB0::0x1AB1::0x0E11::DP8C174805187::INSTR"
 # dp832_addr = "USB0::0x1AB1::0x0E11::DP8C175105606::INSTR"
 
 
