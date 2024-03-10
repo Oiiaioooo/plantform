@@ -38,7 +38,7 @@ def generate_matrix(n):
 
     return matrix
 connectMatrix = generate_matrix(circuit_nodes)#circuit_node is the real node in the relay matrix
-which=pd.read_excel("../../cnode_to_relay1.xlsx")
+which=pd.read_excel("cnode_to_relay1.xlsx")
 which=which.drop(which.columns[[0]],axis=1)
 connectMatrix=np.array(which)
 
