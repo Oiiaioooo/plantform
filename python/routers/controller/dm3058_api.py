@@ -3,7 +3,7 @@ import datetime
 from utils.exp.dm3058 import dm3058
 from pydantic import BaseModel
 
-dm3058_addr = "USB0::0x1AB1::0x0588::DM3H134900675::INSTR"
+dm3058_addr = "USB0::0x1AB1::0x0588::DM3H134900658::INSTR"
 router = APIRouter()
 
 

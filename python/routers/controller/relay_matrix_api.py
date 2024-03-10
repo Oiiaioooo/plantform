@@ -169,13 +169,16 @@ async def set_relay(item: INPUT, response: Response):#item comes from client sid
                         return 'E'
                     case 15:
                         return 'F'
-
-            value_left = array_bin_to_hex(trans_array[:4])
-            value_right = array_bin_to_hex(trans_array[4:])
+            if(n>15):
+                value_left = array_bin_to_hex(np.flipud(trans_array[4:]))
+                value_right = array_bin_to_hex(np.flipud(trans_array[:4]))
+            else:
+                value_left = array_bin_to_hex(trans_array[:4])
+                value_right = array_bin_to_hex(trans_array[4:])
             command += " " + relay_number[n] + " " + value_left + value_right
         print(command)
 
-        mySerial = serial.Serial("COM10", 115200, timeout=2)
+        mySerial = serial.Serial("COM13", 115200, timeout=2)
         commanda=command.split(" ")
         command1="02 20 "+" ".join(commanda[2:34])
         command2="02 20 "+" ".join(commanda[34:])
@@ -184,6 +187,8 @@ async def set_relay(item: INPUT, response: Response):#item comes from client sid
         clr2=bytes.fromhex(command2)
         mySerial.write(clr1)
         time.sleep(0.5)
+        mySerial.close()
+        mySerial = serial.Serial("COM13", 115200, timeout=2)
         mySerial.write(clr2)
         print(mySerial.read_all())
         # #print(mySerial.read(2))
